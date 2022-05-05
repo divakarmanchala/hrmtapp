@@ -1,0 +1,6 @@
+.admin-home-left-nav-container {
+  display: flex;
+  flex-direction: column;
+  width: 22%;
+  height: 100vh;
+}

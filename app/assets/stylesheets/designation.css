@@ -1,0 +1,13 @@
+.designation-main-container {
+
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+}
+
+
+
+.designation-form-sub-container {
+  margin-left: 50px;
+  margin-top: 50px;
+}

@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  leave_id: 1
+  employee_id: 1
+  start_date: 2022-04-24 21:14:40
+  end_date: 2022-04-24 21:14:40
+  status: MyString
+  decided_by: 1
+  reason: MyString
+
+two:
+  leave_id: 1
+  employee_id: 1
+  start_date: 2022-04-24 21:14:40
+  end_date: 2022-04-24 21:14:40
+  status: MyString
+  decided_by: 1
+  reason: MyString

@@ -1,0 +1,110 @@
+.zensark-home-main-container {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  background-color: white;
+}
+.zensrk-home-left-container {
+  width: 22%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width:765px) {
+  .zensark-home-left-container {
+    width: 15%;
+  }
+}
+.zensark-home-left-buttons {
+  text-decoration: none;
+  color: white;
+  font-size: larger;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #27518b;
+  height: 25%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.zensark-home-right-container {
+  height: 98%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 80%;
+  background-color: white;
+}
+
+.zensark-home-right-top-container {
+  height: 47%;
+  background-color: white;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.zensark-home-right-bottom-container {
+  height: 45%;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.zensark-home-right-bottom-left-container {
+  height: 100%;
+  background-color: #e3f2fd;
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.zensark-home-right-bottom-right-container {
+  height: 100%;
+  background-color: #e3f2fd;
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.column-chart-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #e3f2fd;
+}
+
+.heading-container {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding-top: 10px;
+  padding-bottom: 7px;
+  background-color: white;
+}
+
+.attendace-heading {
+  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 76px;
+}
+
+.leaves-heading {
+  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 76px;
+
+}
+
+.holidays-heading {
+  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 76px;
+  
+}

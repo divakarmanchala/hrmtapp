@@ -1,0 +1,2 @@
+module LeavesManagementHelper
+end

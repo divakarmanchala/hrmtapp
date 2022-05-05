@@ -1,0 +1,56 @@
+<div class="employee-details-main-container">
+  <div class="employee-details-sub-container">
+    <h1 class="employee-details-heading">Employee detalis</h1>
+    <%= form_with model: @emplyee_details do |f| %>
+      <div class="employee-details-inputs-main-container">
+        <div>
+          <div class="field">
+            <%= f.label :contact_no %><br />
+            <%= f.number_field :contact_no, autofocus: true, autocomplete: "contact-no" %>
+          </div>
+
+          <div class="field">
+            <%= f.label :emergency_contact_no %><br />
+            <%= f.number_field :emergency_contact_no, autofocus: true, autocomplete: "emergency-contact_no" %>
+          </div>
+
+          <div class="field">
+            <%= f.label :designation_id %><br />
+            <%= f.number_field :designation_id, autofocus: true, autocomplete: "designation" %>
+          </div>
+
+          <div class="field">
+            <%= f.label :emplyee_id, "Employe Id" %><br />
+            <%= f.number_field :emplyee_id, autofocus: true, autocomplete: "emplyee-id" %>
+          </div>
+        </div>
+        <div>
+          <div class="field">
+            <%= f.label :manager_id, "Manager Id" %><br />
+            <%= f.number_field :manager_id, autofocus: true, autocomplete: "manager-id" %>
+          </div>
+
+          <div class="field">
+            <%= f.label :blood_group, "Blood Group" %><br />
+            <%= f.text_field :blood_group, autofocus: true, autocomplete: "blood-group" %>
+          </div>
+
+          <div class="field">
+            <%= f.label :project_id, "Project Id" %><br />
+            <%= f.number_field :project_id, autofocus: true, autocomplete: "project-id" %>
+          </div>
+
+          <div class="field">
+            <%= f.label :experience, "Expirence" %><br />
+            <%= f.number_field :experience, autofocus: true, autocomplete: "experience" %>
+          </div>
+        </div>
+      </div>
+
+      <div class="actions employee-details-submit-button-container">
+        <%= f.submit "Add" %>
+      </div>
+
+    <% end %>
+  </div>
+</div>

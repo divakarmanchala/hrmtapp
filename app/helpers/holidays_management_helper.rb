@@ -1,0 +1,2 @@
+module HolidaysManagementHelper
+end

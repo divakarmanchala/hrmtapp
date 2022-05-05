@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  login: 2022-04-24 21:22:08
+  logout: 2022-04-24 21:22:08
+  reason: MyString
+  employee_id: 1
+
+two:
+  login: 2022-04-24 21:22:08
+  logout: 2022-04-24 21:22:08
+  reason: MyString
+  employee_id: 1

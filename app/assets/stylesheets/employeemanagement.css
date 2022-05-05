@@ -1,0 +1,54 @@
+.employee-management-main-container {
+  display: flex;
+  background-color: white;
+}
+
+.employee-management-right-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 40px;
+  margin-top: 20px;
+}
+
+.employees-management-heading {
+  color: black;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.employee-management-search-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.employee-management-search-button{
+  color: #27518b !important;
+  border-color: #27518b !important;
+}
+
+.employee-management-add-employee-button {
+  color: white !important;
+  background-color: #27518b !important;
+}
+
+
+table {
+  margin-top: 20px;
+  border-collapse: collapse;
+  text-align: center;
+}
+th {
+  background-color:#27518b;
+  Color:white;
+  text-align:center;
+}
+th, td {
+  width:150px;
+  text-align:center;
+  border:1px solid black;
+  padding:5px
+
+}

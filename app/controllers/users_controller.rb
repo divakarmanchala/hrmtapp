@@ -18,7 +18,7 @@ class UsersController < ApplicationController
   def create
     @user = Employee.new(employee_params)
     if @user.save 
-      redirect_to employeemanagement_path
+      redirect_to users_path
     else  
       render 'new'
     end 
@@ -26,7 +26,7 @@ class UsersController < ApplicationController
 
   def update
     if @user.update(employee_params)
-      redirect_to employeemanagement_path
+      redirect_to users_path
     else  
       redner 'edit'
     end
@@ -34,7 +34,7 @@ class UsersController < ApplicationController
 
   def destroy
     @user.delete 
-    redirect_to employeemanagement_path
+    redirect_to users_path
   end
 
   private 

@@ -1,24 +1,24 @@
-class EmployeeManagementController < ApplicationController
+class EmployeesController < ApplicationController
 
   def index 
-    @employee = Employee.find(params[:id])
+    @user = Employee.find(params[:id])
   end
 
   def employeemanagement
-    @Employess = Employee.all
+    @users = Employee.all
   end
 
   #creating new employee
 
   def new 
-    @employee = Employee.new
+    @user = Employee.new
   end
 
   
 
   def create 
-    @employee = Employee.new(new_employee_params)
-    if @employee.save 
+    @user = Employee.new(new_employee_params)
+    if @user.save 
       redirect_to employeemanagement_path
     else  
       render plain: 'faild'
@@ -26,8 +26,8 @@ class EmployeeManagementController < ApplicationController
   end
 
   def destroy 
-    @employee = Employee.find(params[:id])
-    @employee.destroy
+    @user = Employee.find(params[:id])
+    @user.destroy
     redirect_to employeemanagement_path
   end
   #(:email, :first_name, :last_name, :employee_id, :role_id:, :password)

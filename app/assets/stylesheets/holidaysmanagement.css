@@ -1,0 +1,32 @@
+.holidays-management-main-container {
+  background-color: white;
+  display: flex;
+  
+}
+
+.holidays-management-sub-container {
+  margin-left: 20px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.holidays-management-heading {
+  text-align: center;
+  font-size: 30px;
+}
+
+.holidays-management-body-container {
+  display: flex;
+  
+}
+
+.add-new-holiday-headind {
+  font-size: 25px;
+}
+
+.holidays-table-container {
+  margin-left: 100px;
+  margin-top: 15px;
+}

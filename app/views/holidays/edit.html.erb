@@ -1,0 +1,35 @@
+<div class="holidays-management-main-container">
+  <%= render 'layouts/adminleftnav' %>
+  <div class="holidays-management-sub-container">
+    <h1 class="holidays-management-heading">Holidays Managment</h1>
+    <div class="holidays-management-body-container">
+      <div class="holidays-form-sub-container">
+        <h1 class="add-new-holiday-headind">Edit holiday</h1>
+        <%= render 'form'%>
+      </div>
+      <div class="holidays-table-container">
+        <table class="table-container w-100 m-0">
+          <tr class="t-header-cotainer">
+              <th class="t-header">Date</th>
+              <th>Description</th>
+              <th>Edit</th>
+              <th>Delete</th>
+          </tr>
+          <% @holidays.each do |h| %>
+          
+              <tr class="t-sub-container">
+                  <td>
+                  <%= h.date %>
+                  </td>
+                  <td>
+                  <%= h.name%>
+                  </td>
+                  
+              </tr>
+          <% end %>
+        </table>
+      </div>
+    </div>
+  </div>
+  
+</div>

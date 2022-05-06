@@ -1,0 +1,36 @@
+<div>
+  <table class="table-container">
+    <tr class="t-header-cotainer">
+        <th class="t-header">First Name</th>
+        <th>Last Name</th>
+        <th>Email</th>
+        <th>Details</th>
+        <th>Edit</th>
+        <th>Delete</th>
+    </tr>
+    <% @employee.each do |e| %>
+    
+        <tr class="t-sub-container">
+            <td>
+            <%= e.first_name.capitalize %>
+            </td>
+            <td>
+            <%= e.last_name.capitalize %>
+            </td>
+            <td>
+            <%= e.email%>
+            </td>
+            <td>
+            <%= link_to "More Details", employeedetails_path, class: "more-details-button"%>
+            </td>
+            <td>
+            
+            <%= link_to "Edit", edit_employee_path, class: "btn btn-primary" %> 
+            </td>   
+            <td>
+            <%= link_to "Delete", employee_path(e),  class: "btn btn-danger", method: :delete %>
+            </td>
+        </tr>
+    <% end %>
+  </table>
+</div>

@@ -1,5 +1,8 @@
 class DashboardController < ApplicationController
   before_action :set_profile
+
+  
+
   def dashboard
     @upholidays = Holiday.all
   end

@@ -1,52 +1,17 @@
-<div class="employee-management-main-container">
-  <%= render 'admin/adminleftnav' %>
+<div class="designation-main-container">
+  <%= render 'layouts/adminleftnav' %>
   <div class="employee-management-right-container">
     <h1 class="employees-management-heading">Employees Management</h1>
     <div class="employee-management-search-container">
-      <%= link_to "Add New Employee",  class: "btn employee-management-add-employee-button" %>
+      <%= link_to "Add New Employee",new_user_path,  class: "btn employee-management-add-employee-button" %>
       <form class="d-flex">
         <input class="form-control me-2" type="search" placeholder="Search Employee" aria-label="Search">
         <button class="btn employee-management-search-button" type="submit">Search</button>
       </form>
     </div>
-    <div>
-      <table class="table-container">
-        <tr class="t-header-cotainer">
-            <th class="t-header">First Name</th>
-            <th>Last Name</th>
-            <th>Email</th>
-            <th>Details</th>
-            <th>Edit</th>
-            <th>Delete</th>
-        </tr>
-        <% @Employess.each do |e| %>
-        
-            <tr class="t-sub-container">
-                <td>
-                <%= e.first_name.capitalize %>
-                </td>
-                <td>
-                <%= e.last_name.capitalize %>
-                </td>
-                <td>
-                <%= e.email%>
-                </td>
-                <td>
-                <%= link_to "More Details", employeedetails_path, class: "more-details-button"%>
-                </td>
-                <td>
-                
-                <%= link_to "Edit", edit_employee_registration_path, class: "btn btn-primary" %> 
-                </td>   
-                <td>
-                <%= link_to "Delete", employeemanagement_path(e),  class: "btn btn-danger", method: :delete %>
-                </td>
-            </tr>
-        <% end %>
-      </table>
-    </div>
+    <%= render 'users/userstable' %>
   </div>
 </div>
 
-<h1>Students</h1>
+
 

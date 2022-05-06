@@ -26,7 +26,7 @@
     <% if request.path.split("/").last == 'sign_in' || request.path.split("/").last == 'sign_in?' %>
       <%= button_to "Home", root_path, class: "btn btn-outline-dark", method: :get %>
     <% else %>
-      <%= button_to "sign in", employee_session_path, class: "btn btn-outline-dark mr-5", method: :get %>
+      <%= button_to "sign in", new_employee_session_path, class: "btn btn-outline-dark mr-5", method: :get %>
     <% end%>
     <%end%>
   </div>

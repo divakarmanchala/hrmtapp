@@ -1,0 +1,39 @@
+<div class="designation-main-container">
+  <%= render 'layouts/adminleftnav' %>
+  <div class="employee-management-right-container">
+    <h1 class="employees-management-heading">Holidays Management</h1>
+    <div class="employee-management-search-container">
+      <%= link_to "Add New Holiday", new_holiday_path,  class: "btn employee-management-add-employee-button" %>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search Holiday" aria-label="Search">
+        <button class="btn employee-management-search-button" type="submit">Search</button>
+      </form>
+    </div>
+    <div>
+      <table class="table-container">
+        <tr class="t-header-cotainer">
+            <th>Holiday Name</th>
+            <th>Holiday Date</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+        <% @holidays.each do |holiday| %>
+            <tr class="t-sub-container">
+                <td>
+                <%= holiday.name %>
+                </td>
+                <td>
+                <%= holiday.date %>
+                </td>
+                <td>
+                <%= link_to "Edit", edit_holiday_path(holiday), class: "btn btn-primary" %> 
+                </td>   
+                <td>
+                <%= button_to "Delete", holiday_path(holiday),  class: "btn btn-danger", method: :delete %>
+                </td>
+            </tr>
+        <% end %>
+      </table>
+    </div>
+  </div>
+</div>

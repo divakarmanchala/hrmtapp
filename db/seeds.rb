@@ -5,11 +5,5 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
-(Date.today-10..Date.today).map do |d|
-  Attendance.create([{
-    employee_id: Employee.last.id,
-    login: d.beginning_of_day,
-    logout: d.end_of_day
-  }])
-end
+
 

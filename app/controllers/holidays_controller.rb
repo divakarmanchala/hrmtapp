@@ -15,7 +15,7 @@ class HolidaysController < ApplicationController
   def create 
     @holiday = Holiday.new(holidays_params)
     if @holiday.save 
-      redirect_to holidaysmanagement_path
+      redirect_to holidays_path
     else  
       render 'new'
     end
@@ -23,7 +23,7 @@ class HolidaysController < ApplicationController
 
   def update 
     if @holiday.update(holidays_params)
-      redirect_to holidaysmanagement_path
+      redirect_to holidays_path
     else  
       render 'edit'
     end
@@ -31,7 +31,7 @@ class HolidaysController < ApplicationController
 
   def destroy 
     @holiday.destroy 
-    redirect_to holidaysmanagement_path
+    redirect_to holidays_path
   end
 
   private 

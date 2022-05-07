@@ -25,10 +25,9 @@
           <div class="leave-field">
             <label for="leavetype">Leave Type</label>
             <select class="leave-types-select-container" id="leavetype" name="leavetype">
-              <option value="option1">option 1</option>
-              <option value="option2">option 2</option>
-              <option value="option3">option 3</option>
-              <option value="option4">option 4</option>
+              <% @types_of_eleaves.each do |leave|%>
+                <option>leave.name</option>
+              <% end %>
             </select>
           </div>
           <div class="from-to-main-container">
